@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.theapp.instaapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/cslogoop_background"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/cslogoop_background"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.theapp.instaapp.SplashScreenActivity"
+            android:theme="@style/SpashScreenTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theapp.instaapp.ShowUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.theapp.instaapp.StoryActivity"
+            android:exported="false" />
+        <activity android:name="com.theapp.instaapp.AddCommentActivity" />
+        <activity android:name="com.theapp.instaapp.AddPostActivity" />
+        <activity android:name="com.theapp.instaapp.LoginActivity">
+        </activity>
+        <activity android:name="com.theapp.instaapp.SignUpActivity" />
+        <activity android:name="com.theapp.instaapp.AccountSettings" />
+        <activity android:name="com.theapp.instaapp.AddStoryActivity" />
+        <activity
+            android:name="com.theapp.instaapp.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>
